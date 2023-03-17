@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Novamate</title>
+	<!-- <link rel="stylesheet" href="css/libs.min.css"> -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_inner">
+				<div class="header_logo logo">
+					<img class="logo_img" src="img/logo.svg" alt="logo">
+					<span class="logo_title">novamate</span>
+				</div>
+				
+				<div class="header_burger" id="burger"><span class="burger-span"></span></div>
+				<nav class="header_nav" id="header_nav">
+					<a href="#hero" class="header_nav-item">Home</a>
+					<a href="#price" class="header_nav-item">Pricing</a>
+					<button class="header_nav-item btn">Get started</button>
+				</nav>
+			</div>
+			
+		</div>
+	</header>
+	<section id="hero" class="hero">
+		<div class="container">
+			<div class="hero_inner">
+				<div class="hero_content">
+					<h1 class="hero_title"><span style="color: #6B88A5;">Grow your</span> <span style="color: #33C5FE;">eCommerce</span> revenue with Marketing Email Automation</h1>
+					<p class="hero_paragraph">Grow your eCommerce business the easy way with email automation from Novamate. Get started for free and put your marketing on autopilot to boost your revenue.</p>
+					<button class="hero_btn btn">Get started for free <img src="img/arrow.svg" alt=""></button>
+					<div class="hero_rating rating">
+						<div class="rating_img">
+							<img class="rating_img-item" src="img/customer1.png" alt="customer">
+							<img class="rating_img-item" src="img/customer2.png" alt="customer">
+							<img class="rating_img-item" src="img/customer3.png" alt="customer">
+						</div>
+						<div id="rating_counts" class="rating_counts">
+							<span class="rating_customers hero-anim-counter">3589</span>
+							<span class="rating_customers-text">Happy Customers</span>
+						</div>
+						<div class="rating_counts">
+							<span class="rating_customers">4.8/5</span>
+							<span class="rating_customers-text"><img  class="rating_customers-stars" src="img/Stars.svg" alt="">Rating</span>
+						</div>
+						
+					</div>
+				</div>
+				<div class="hero_spiner spiner">
+				
+					<div class="spiner_row">
+						<div class="spiner_item spiner_item--2">
+							<img src="img/Frame1.png" alt="spiner-img">
+						</div>
+						<div class="spiner_item spiner_item--3">
+							<img src="img/spiner2.png" alt="spiner-img">
+						</div>
+					</div>
+					<div class="spiner_row">
+						
+						<div class="spiner_item spiner_item--4">
+							<img src="img/spiner3.png" alt="spiner-img">
+						</div>
+						<div class="spiner_item spiner_item--center">
+							<img src="img/spiner-center.png" alt="spiner-img">
+						</div>
+						<div class="spiner_item spiner_item--5">
+							<img src="img/spiner4.png" alt="spiner-img">
+						</div>
+					</div>
+					<div class="spiner_row">
+						<div class="spiner_item spiner_item--6">
+							<img src="img/spiner5.png" alt="spiner-img">
+						</div>
+						<div class="spiner_item spiner_item--7">
+							<img src="img/Frame6.png" alt="spiner-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="works">
+		<div class="container">
+			<div class="works_inner">
+				<div class="works_title">
+					How <span class="works_tittle--blue">it works</span>
+					<img class="works_title-image" src="img/howworkstip.png" alt="shhh">
+				</div>
+				<div class="works_step-wrap">
+					<div class="works_step step step--1">
+						<img src="img/Step1.svg" alt="step1" class="step_img">
+						<div class="step_text-wrap">
+							<h5 class="step_title">Step one</h5>
+							<p class="step_description">Choose your campaigns according to your goals</p>
+						</div>
+					</div>
+					<div class="works_step step step--2">
+						<img src="img/Step2.svg" alt="step1" class="step_img">
+						<div class="step_text-wrap">
+							<h5 class="step_title">Step two</h5>
+							<p class="step_description">Choose from templates or request custom layout for your brand</p>
+						</div>
+					</div>
+					<div class="works_step step step--3">
+						<img src="img/Step3.svg" alt="step1" class="step_img">
+						<div class="step_text-wrap">
+							<h5 class="step_title">Step three</h5>
+							<p class="step_description">Go live - start seeing results!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="value">
+		<div class="container">
+			<div class="value_inner ">
+				<div class="value_title">
+					Our main <span class="value_tittle--blue">value</span>
+					<img class="value_title-image" src="img/starvalue.png" alt="star">
+				</div>
+				<span class="value_subtitle">We make it easy for users to use our platform, that's why we provide this benefit.</span>
+				<div class="value_card-wrap">
+						<div class="value_card value-card ">
+							<img class="value-card_img" src="img/card1.svg" alt="img">
+							<span class="value-card_descr">Repeat customers, increase lifetime value</span>
+						</div>
+						<div class="value_card value-card ">
+							<img class="value-card_img" src="img/card2.svg" alt="img">
+							<span class="value-card_descr">Increase order value through upsells</span>
+						</div>
+						<div class="value_card value-card ">
+							<img class="value-card_img" src="img/card3.svg" alt="img">
+							<span class="value-card_descr">Win back old 
+								customers</span>
+						</div>
+						<div class="value_card value-card ">
+							<img class="value-card_img" src="img/card4.svg" alt="img">
+							<span class="value-card_descr">Increase brand reputation with positive reviews</span>
+						</div>
+						<div class="value_card value-card ">
+							<img class="value-card_img" src="img/card5.svg" alt="img">
+							<span class="value-card_descr">Get audience insights through surveys</span>
+						</div>
+						<div class="value_card value-card ">
+							<img class="value-card_img" src="img/card6.svg" alt="img">
+							<span class="value-card_descr">Instant feedback from mailing</span>
+						</div>	
+				</div>
+			</div>
+		</div>
+		
+		
+	</section>
+	<section class="direct">
+		<div class="container">
+			<div class="direct_inner">
+				<div class="direct_img">
+					<img src="img/direct.svg" alt="chat">
+					<div class="direct_img--yellow">
+						<img src="img/spiner6.png" alt="girl">
+					</div>
+					<div class="direct_img--blue">
+						<img src="img/spiner-center.png" alt="man">
+					</div>
+					<div class="direct_img--green">
+						<img src="img/spiner4.png" alt="man">
+					</div>
+				</div>
+				<div class="direct_text direct-text">
+					<div class="direct-text_title">Get direct orders from<span class="direct-text_title--blue"> your customers </span><img src="img/directtitle.png" alt="love"></div>
+					<div class="direct-text_pargraph">Create your own targeted newsletters with Anomate that convert more visitors than any website. With a lot of unique blocks, it's easy to create any page. Many pass options are available.</div>
+					<div class="direct-text_counter-wrap">
+						<div class="direct-text_counter-item">
+							<span class="counter-item_number direct-anim-counter">93<span>K+</span></span><span>Newsletters <br> Powering</span>
+						</div>
+						<div class="direct-text_counter-item">
+							<span class="counter-item_number direct-anim-counter">7<span>M+</span></span><span>Chats in <br> Last 2022</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="cta">
+		<div class="cta_inner">
+			<div class="cta_text">Novamate - the most customizable eCommerce platform for building your online business.</div>
+			<button class="cta_btn btn">Get started for free</button>
+		</div>
+	</section>
+	<section id="price" class="pricing">
+		<div class="container">
+			<div class="pricing_inner">
+				<div class="pricing_title">Discover our <span class="pricing_title--blue">pricing </span><img class="pricing_title-img" src="img/pricingtitle.png" alt="$"></div>
+				<p class="pricing_subtitle">Start building for free, then add a site plan to go live. Account plans unlock additional features.</p>
+				<div class="pricing_switch">
+					<input type="radio" checked name="radio" id="Monthly">
+					<label for="Monthly">Monthly</label>
+					<input type="radio" name="radio" id="Yearly">
+					<label for="Yearly">Yearly</label>
+				</div>
+				<div class="pricing_card-wrap">
+					<div class="pricing_card pricing-card">
+						<div class="pricing-card_price">$19</div>
+						<div class="pricing-card_title">Basic</div>
+						<ul class="pricing-card_features-list">
+							<li class="pricing-card_features-list-item">1 TB Storage</li>
+							<li class="pricing-card_features-list-item">Expert Support</li>
+							<li class="pricing-card_features-list-item">50 Projects</li>
+							<li class="pricing-card_features-list-item">Unlimited Members</li>
+						</ul>
+						<button class="pricing-card_btn btn">Get started</button>
+					</div>
+					<div class="pricing_card pricing-card pricing-card--active">
+						<div class="pricing-card_price pricing-card_price--active">$69</div>
+						<div class="pricing-card_title">Advanced</div>
+						<ul class="pricing-card_features-list">
+							<li class="pricing-card_features-list-item">1 TB Storage</li>
+							<li class="pricing-card_features-list-item">Expert Support</li>
+							<li class="pricing-card_features-list-item">50 Projects</li>
+							<li class="pricing-card_features-list-item">Unlimited Members</li>
+						</ul>
+						<button class="pricing-card_btn btn">Get started</button>
+					</div>
+					<div class="pricing_card pricing-card">
+						<div class="pricing-card_price">$99</div>
+						<div class="pricing-card_title">Enterprise</div>
+						<ul class="pricing-card_features-list">
+							<li class="pricing-card_features-list-item">1 TB Storage</li>
+							<li class="pricing-card_features-list-item">Expert Support</li>
+							<li class="pricing-card_features-list-item">50 Projects</li>
+							<li class="pricing-card_features-list-item">Unlimited Members</li>
+						</ul>
+						<button class="pricing-card_btn btn">Get started</button>
+					</div>
+					
+				</div>
+				<div class="pricing-arrow-wrap">
+					<div class="pricing-arrow pricing-arrow--prev"></div>
+					<div class="pricing-arrow pricing-arrow--next"></div>
+				</div >
+			</div>
+		</div>
+	</section>
+	<section class="loved">
+		<div class="container">
+			<div class="loved_inner">
+				<div class="loved-arrow-wrap">
+					<div class="loved-arrow loved-arrow--prev"></div>
+					<div class="loved-arrow loved-arrow--next"></div>
+				</div >
+				<div class="loved_title">Novamate is loved <span class="loved_title--blue">by users </span><img src="img/heart.png" alt="heart"></div>
+				<p class="loved_subtitle">Amet minim mollit non deserunt</p>
+				<div class="loved_card-wrap">
+				
+					<div class="loved_card loved-card">
+						<div class="loved-card_img loved-card_img--1"><img src="img/Frame1.png" alt="customer"></div>
+						<div class="loved-card_comment">“It has been an absolute pleasure dealing with Scan during the lockdown. Our church began to livestream our services, and Scan had a great selection of hardware....”</div>
+						<div class="loved-card_name">John Doe</div>
+						<div class="loved-card_position">Nursing Assistant</div>
+					</div>
+					<div class="loved_card loved-card">
+						<div class="loved-card_img loved-card_img--2"><img src="img/spiner5.png" alt="customer"></div>
+						<div class="loved-card_comment">“It has been an absolute pleasure dealing with Scan during the lockdown. Our church began to livestream our services, and Scan had a great selection of hardware....”</div>
+						<div class="loved-card_name">Emine Isik</div>
+						<div class="loved-card_position">Nursing Assistant</div>
+					</div>
+					<div class="loved_card loved-card">
+						<div class="loved-card_img loved-card_img--3"><img src="img/spiner4.png" alt="customer"></div>
+						<div class="loved-card_comment">“It has been an absolute pleasure dealing with Scan during the lockdown. Our church began to livestream our services, and Scan had a great selection of hardware....”</div>
+						<div class="loved-card_name">Mark Dyson</div>
+						<div class="loved-card_position">Nursing Assistant</div>
+					
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="questions">
+		<div class="container">
+			<div class="questions_inner">
+				<div class="questions_title">Frequently Asked <span class="questions_title--blue">Questions </span><img src="img/questinsimg.png" alt="hmm" srcset=""></div>
+				<div class="questions_title--less questions_title">FA<span class="questions_title--blue">Q </span><img src="img/questinsimg.png" alt="hmm" srcset=""></div>
+				<div class="questions_subtitle">If you are hesitating, do not worry - we are here to explain everything!</div>
+				<div class="questions_details-wrap">
+					<div id="questions_details-row-left" class="questions_details-row">
+						<details class="questions_details-item">
+							<summary><span>Can I use Novamate for my clients?</span>
+								<div class="summary-icon"></div>
+							</summary>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</details>
+						<details class="questions_details-item">
+							<summary><span>Do I get free updates?</span>
+								<div class="summary-icon"></div>
+							</summary>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</details>
+						<details class="questions_details-item">
+							<summary><span>Is there a money back guarantee?</span>
+								<div class="summary-icon"></div>
+							</summary>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</details>
+					</div>
+					<div id="questions_details-row-right" class="questions_details-row">
+						<details class="questions_details-item">
+							<summary><span>Can I use Novamate for my clients?</span>
+								<div class="summary-icon"></div>
+							</summary>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</details>
+						<details class="questions_details-item">
+							<summary><span>Do I get free updates?</span>
+								<div class="summary-icon"></div>
+							</summary>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</details>
+						<details class="questions_details-item">
+							<summary><span>Is there a money back guarantee?</span>
+								<div class="summary-icon"></div>
+							</summary>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</details>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="clients">
+		<div class="container">
+			<div class="clients_inner">
+				<div class="clients_title">Happy <span class="clients_title--blue">clients </span><img src="img/clientstitle.png" alt="slime"></div>
+				<div class="clients_subtitle">There are many variations of passages of Lorem Ipsum available,
+					but the majority have suffered alteration.</div>
+				<div class="clients_item-wrap">
+					<div class="clients_item"><a href="http://google.com" target="_blank" rel="noopener noreferrer"><img src="img/google.svg" alt="google"></a></div>
+					<div class="clients_item"><a href="http://dribbble.com" target="_blank" rel="noopener noreferrer"><img src="img/dribbble.svg" alt="google"></a></div>
+					<div class="clients_item"><a href="http://linkedin.com" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.svg" alt="google"></a></div>
+					<div class="clients_item"><a href="http://amazon.com" target="_blank" rel="noopener noreferrer"><img src="img/amazon.svg" alt="google"></a></div>
+					<div class="clients_item"><a href="http://medium.com" target="_blank" rel="noopener noreferrer"><img src="img/medium.svg" alt="google"></a></div>
+					<div class="clients_item"><a href="http://spotify.com" target="_blank" rel="noopener noreferrer"><img src="img/spotify.svg" alt="google"></a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact">
+		<div class="container">
+			<div class="contact_inner">
+				<div class="contact_logo-wrap">
+						<div class="contact_logo logo">
+							<img class="logo_img" src="img/logo.svg" alt="logo">
+							<span class="logo_title footer-logo_title">novamate</span>
+						</div>
+						<span class="contact_slogan">Top learning experiences that create more talent in the world.</span>
+				</div>
+				<div class="contact_social">
+					<a href="#" class="contact_social-item"><img src="img/twitter.svg" alt="twitter" ></a>
+					<a href="#" class="contact_social-item"><img src="img/dribbleicon.svg" alt="dribble" ></a>
+					<a href="#" class="contact_social-item"><img src="img/insticon.svg" alt="instagram" ></a>
+				</div>
+				<div class="contact_email">
+					<div class="contact_email-title">Neet help? Contact us at</div>
+					<a href="#" class="contact_email-address">support@novamate.io</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_inner">
+				<span class="footer_copy">© 2022 Novamate. All rights reserved.</span>
+				<span class="footer_autor">Design by  <a href="#">@ardem</a></span>
+				<nav class="footer_nav">
+					<a href="#" class="footer_nav-item">Home</a>
+					<a href="#" class="footer_nav-item">Pricing</a>
+				</nav>
+
+			</div>
+		</div>
+	</footer>
+<script type="module" src="js/common.js"></script>
+</body>
+</html>
