@@ -121,7 +121,7 @@ section {
   height: 44px;
   background: #33C5FE;
   border-radius: 100px;
-  background-image: url(/img/line.svg);
+  background-image: url(../img/line.svg);
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-transition: background-color 0.3s ease;
@@ -169,7 +169,7 @@ section {
 
 .pricing-arrow[aria-disabled=true], .loved-arrow[aria-disabled=true] {
   background-color: #F6F8FA;
-  background-image: url(/img/lineDis.svg);
+  background-image: url(../img/lineDis.svg);
 }
 
 .header {
