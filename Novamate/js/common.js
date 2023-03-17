@@ -233,7 +233,7 @@ function animUp(el,trigger){
     }) 
 }
 animLeft('.hero_content')
-animRight(".hero_spiner")
+animRight(".spiner_item")
 animUp('.value_card',".value_inner" )
 animLeft('.direct_img')
 animRight(".direct_text")
