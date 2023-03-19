@@ -928,23 +928,6 @@ section {
   gap: 27.3px;
   -webkit-filter: drop-shadow(10px 40px 50px rgba(219, 227, 237, 0.2));
           filter: drop-shadow(10px 40px 50px rgba(219, 227, 237, 0.2));
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-.value-card:hover {
-  -webkit-transform: translateY(-4px) !important;
-      -ms-transform: translateY(-4px) !important;
-          transform: translateY(-4px) !important;
-}
-@media (max-width: 670px) {
-  .value-card:hover {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
 }
 @media (max-width: 970px) {
   .value-card {
