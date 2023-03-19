@@ -10,6 +10,7 @@ const nav = document.querySelector('.header_nav');
 const header = document.querySelector('.header');
 const body = document.querySelector("body")
 const navItem = document.querySelectorAll('.header_nav-item');
+const html = document.querySelector("html")
 
 burger.addEventListener('click', (e) => {
     e.preventDefault()
@@ -19,7 +20,9 @@ burger.addEventListener('click', (e) => {
     nav.classList.toggle('header_nav-active');
     burgerSpan.classList.toggle('active');
 
-    nav.classList.contains('header_nav-active') ? body.style.overflowY = 'hidden' : body.style.overflowY = ''
+    // nav.classList.contains('header_nav-active') ? body.style.overflowY = 'hidden' : body.style.overflowY = ''
+    nav.classList.contains('header_nav-active') ? html.style.overflowY = 'hidden' : html.style.overflowY = ''
+
     
     
 })
@@ -30,12 +33,16 @@ navItem.forEach(element => element.addEventListener('click',(e) => {
         nav.classList.toggle('header_nav-active');
         burgerSpan.classList.toggle('active');
     
-        nav.classList.contains('header_nav-active') ? body.style.overflowY = 'hidden' : body.style.overflowY = ''
+        // nav.classList.contains('header_nav-active') ? body.style.overflowY = 'hidden' : body.style.overflowY = ''
+        nav.classList.contains('header_nav-active') ? html.style.overflowY = 'hidden' : html.style.overflowY = ''
+
     }
    
     
     
 }));
+
+
 
 // scroll to link
 // Select all links with hashes
@@ -200,7 +207,7 @@ function animLeft(el){
       stagger: 0.2
     }) 
 }
-function animRight(el){
+function animRight(el,stagger = 0.2){
   gsap.from(el, {
     duration:1, x:"110%",opacity: 0, ease:Power3.easeOut, 
       scrollTrigger: {
@@ -213,7 +220,7 @@ function animRight(el){
       toggleActions:"play"
         //options: play, pause, resume, reset, restart, complete, reverse,none
       },
-      stagger: 0.2
+      stagger: stagger
     }) 
 }
 function animUp(el,trigger){
@@ -233,7 +240,7 @@ function animUp(el,trigger){
     }) 
 }
 animLeft('.hero_content')
-animRight(".spiner_item")
+animRight(".spiner_item", 0.1)
 animUp('.value_card',".value_inner" )
 animLeft('.direct_img')
 animRight(".direct_text")
