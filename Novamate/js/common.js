@@ -14,7 +14,7 @@ const html = document.querySelector("html")
 
 burger.addEventListener('click', (e) => {
     e.preventDefault()
-    console.log(header.offsetTop)
+    // console.log(header.offsetTop)
     const posY = header.offsetTop
     nav.style.top =(67 + posY)+"px"
     nav.classList.toggle('header_nav-active');
@@ -209,7 +209,7 @@ function animLeft(el){
 }
 function animRight(el,stagger = 0.2){
   gsap.from(el, {
-    duration:1, x:"110%",opacity: 0, ease:Power3.easeOut, 
+      duration:1, x:"110%",opacity: 0, ease:Power3.easeOut, 
       scrollTrigger: {
       trigger:el,
       markers:false,
@@ -217,9 +217,30 @@ function animRight(el,stagger = 0.2){
       end:"bottom 25%", //when bottom of herman passes 25% viewport height
       
          //events: onEnter onLeave onEnterBack onLeaveBack
-      toggleActions:"play"
+      toggleActions:"play",
         //options: play, pause, resume, reset, restart, complete, reverse,none
+   
+      
       },
+      onComplete: () => { 
+        // console.log(el)
+        if(el ==".spiner_item"){
+          gsap.utils.toArray(el).forEach(elem => {
+            let hover = gsap.to(elem,
+              {
+                scale: 1.1,
+                rotate:10,
+                duration: 0.3,
+                paused: true,
+                ease: "power1.inOut"
+              });
+            elem.addEventListener("mouseenter", () => hover.play());
+            elem.addEventListener("mouseleave", () => hover.reverse());
+          });
+        }
+       
+        
+    },
       stagger: stagger
     }) 
 }
@@ -236,6 +257,25 @@ function animUp(el,trigger){
       toggleActions:"play"
         //options: play, pause, resume, reset, restart, complete, reverse,none
       },
+      onComplete: () => { 
+        // console.log(el)
+        if(el ==".value_card"||".loved_card"){
+          gsap.utils.toArray(el).forEach(elem => {
+            let hover = gsap.to(elem,
+              {
+                y: -4,
+                duration: 0.3,
+                paused: true,
+                ease: "power1.inOut"
+              });
+            elem.addEventListener("mouseenter", () => hover.play());
+            elem.addEventListener("mouseleave", () => hover.reverse());
+          });
+        }
+       
+        
+    },
+      
       stagger: 0.2
     }) 
 }
@@ -248,6 +288,8 @@ animUp('.loved_card',".loved_card-wrap" )
 animLeft('#questions_details-row-left')
 animRight("#questions_details-row-right")
 animUp('.clients_item',".clients_item-wrap" )
+
+
 
 
 
