@@ -1054,7 +1054,7 @@ section {
   position: absolute;
   left: 50%;
   top: -39px;
-  background-image: url(/img/ctatop.svg);
+  background-image: url(../img/ctatop.svg);
   background-position: center center;
   background-repeat: no-repeat;
   width: 160px;
@@ -1315,7 +1315,7 @@ section {
   top: 0;
   width: 19px;
   height: 19px;
-  background-image: url(/img/listtype.svg);
+  background-image: url(../img/listtype.svg);
   background-position: center center;
   background-repeat: no-repeat;
 }
