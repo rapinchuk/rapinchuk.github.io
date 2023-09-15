@@ -78,6 +78,7 @@
 }
 .header-menu_list {
   margin-bottom: 0;
+  padding-left: 48px;
 }
 @media (max-width: 960px) {
   .header-menu_list {
@@ -315,6 +316,7 @@
 }
 .main_img-wrap > img {
   position: absolute;
+  max-height: 750px;
 }
 @media (max-width: 1260px) {
   .main_img-wrap > img {
@@ -382,7 +384,7 @@
 }
 
 #main_img--right {
-  right: -10%;
+  right: -20%;
   bottom: 0;
   z-index: 1;
 }
@@ -451,6 +453,12 @@
 .about_img > img {
   position: absolute;
   z-index: 1;
+  background-color: #F9FAFB;
+}
+@media (max-width: 1070px) {
+  .about_img > img {
+    max-height: 100%;
+  }
 }
 @media (max-width: 768px) {
   .about_img > img {
@@ -552,6 +560,7 @@
   margin: 0 auto;
   padding: 4px 12px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 .services_title {
   text-align: center;
@@ -637,6 +646,12 @@
   font-weight: 500;
   color: #212323;
   text-decoration: none;
+  -webkit-transition: font-weight 0.3s ease;
+  transition: font-weight 0.3s ease;
+}
+.services-cart_link:hover {
+  color: #212323;
+  font-weight: 700;
 }
 @media (max-width: 670px) {
   .services-cart_link {
@@ -699,6 +714,7 @@
   padding: 4px 12px;
   text-transform: uppercase;
   margin-bottom: 36px;
+  font-weight: 600;
 }
 @media (max-width: 670px) {
   .faq_subtitle {
@@ -802,6 +818,11 @@
   }
 }
 
+.accordion-button:not(.collapsed) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .prefooter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -869,6 +890,7 @@
   padding: 4px 12px;
   text-transform: uppercase;
   margin-bottom: 36px;
+  font-weight: 600;
 }
 @media (max-width: 670px) {
   .prefooter_subtitle {
@@ -1345,6 +1367,16 @@ input[type=tel]:-moz-placeholder,
   line-height: 1.5em;
   letter-spacing: -2%;
   text-decoration: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.footer_menu-link:hover {
+  color: #FFFFFF;
+  -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 @media (max-width: 600px) {
   .footer_menu-link {
@@ -1417,6 +1449,16 @@ input[type=tel]:-moz-placeholder,
   line-height: 1.5em;
   letter-spacing: -2%;
   text-decoration: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.footer_other-link:hover {
+  color: #FFFFFF;
+  -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 @media (max-width: 600px) {
   .footer_other-link {

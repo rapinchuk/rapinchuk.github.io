@@ -25,7 +25,7 @@
     })
     
     navItem.forEach(element => element.addEventListener('click',(e) => {
-        e.preventDefault()
+        // e.preventDefault()
         if(nav.classList.contains('header_nav-active')){
             nav.classList.toggle('header_nav-active');
             burgerSpan.classList.toggle('active');
