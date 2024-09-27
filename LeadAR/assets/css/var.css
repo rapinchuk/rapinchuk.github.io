@@ -1,0 +1,27 @@
+:root {
+    --bg-color: #F6F7FA;
+    --body-fs: 16px;
+    --btn-radius:10px;
+    --btn-fsS:18px;
+    --btn-fsM:24px;
+    --btn-font: "Trebuchet MS", Tahoma, sans-serif;
+    --title-fs:56px;
+    --subtitle-fs:24px;
+    --title-color-primary:#303030;
+    --title-color-black:#000000;
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --bg-color: #F6F7FA;
+        --body-fs: 16px;
+        --btn-radius:10px;
+        --btn-fsS:18px;
+        --btn-fsM:20px;
+        --btn-font: "Trebuchet MS", Tahoma, sans-serif;
+        --title-fs:26px;
+        --subtitle-fs:16px;
+        --title-color-primary:#303030;
+        --title-color-black:#000000;
+    }
+} 
